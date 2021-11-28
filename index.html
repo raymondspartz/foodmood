@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Food Mood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR START -->
+<hero>
+<section class="hero is-info is-small">
+  <div class="hero-head">
+    <nav class="navbar is-full" role="navigation" aria-label="main navigation"> 
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./index.html">
+                <figure class="image">
+                    <img src="./assets/images/logo.png">
+                </figure>
+                <figure class="image">
+                    <img src="./assets/images/text-foodmood.png">
+                </figure>
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            
+            <div class="navbar-start">
+              <div class="navbar-item">
+                  <span class="nav-saying">your favorite meal + your new favorite cocktail.</span>
+              </div>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item p-3 mx-2" href="./index.html">
+                        home
+                      </a>
+                
+                      <a class="navbar-item p-3 mx-2" id="favorites">
+                        favorites
+                      </a>
+      
+                      <a class="navbar-item p-3 mx-2">
+                          about
+                      </a>
+                      <a class="navbar-item p-3 mx-2">
+                        company
+                      </a>
+                   <span class="navbar-item">
+                    <a class="button is-info is-inverted">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Log in</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+    <!-- NAVBAR END -->
+      
+        <div class="hero-body">
+          <img src="./assets/images/hero-image.png">
+          <div class="container has-text-centered">
+          </div>
+        </div>
+      
+        <div class="hero-foot">
+          <nav class="tabs is-boxed is-fullwidth">
+            <div class="container">
+              <ul>
+                <li class="is-active">
+                  <a class="navbar-item p-3 mx-2" id="favorites">
+                    my favorites
+                  </a>
+                </li>
+                <li class="is-active">
+                  <a class="navbar-item p-3 mx-2" id="favorites">
+                    try a new one
+                  </a>
+                </li>
+               
+              </ul>
+            </div>
+          </nav>
+        </div>
+  </section>
+</hero>
+    <!-- HERO END -->
+
+   <!-- CUISINE OPTIONS CONTAINERS START -->
+   <section class="main-body">
+        <section class="options-container">
+            <div class="columns has-text-centered is-centered pt-5 is-multiline is-mobile" id="top-column">
+                <div class="american cuisine-box level m-5 is-half-tablet is-one-third-desktop" id="cuisines">
+                    <h3 class="title is-4 level-item has-text-grey-dark" target="dish0">American</h3>
+                </div>
+                <div class="french cuisine-box level m-5 is-half-tablet is-one-third-desktop" id="cuisines">
+                    <h3 class="title is-4 level-item has-text-grey-dark" target="dish1">French</h3>
+                </div>
+                <div class="indian cuisine-box level m-5 is-half-tablet is-one-third-desktop" id="cuisines">
+                    <h3 class="title is-4 level-item has-text-grey-dark" target="dish2">Indian</h3>
+                </div>
+            </div>
+            <div class="columns has-text-centered is-centered pb-5 is-multiline is-mobile" id="bottom-column">
+                <div class="italian cuisine-box level m-5 is-half-tablet is-one-third-desktop" id="cuisines">
+                    <h3 class="title is-4 level-item has-text-grey-dark" target="dish3">Italian</h3>
+                </div>
+                <div class="mexican cuisine-box level m-5 is-half-tablet is-one-third-desktop" id="cuisines">
+                    <h3 class="title is-4 level-item has-text-grey-dark" target="dish4">Mexican</h3>
+                </div>
+                <div class="japanese cuisine-box level m-5 is-half-tablet is-one-third-desktop" id="cuisines">
+                    <h3 class="title is-4 level-item has-text-grey-dark" target="dish5">Japanese</h3>
+                </div>
+            </div>     
+        </section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+
+<!-- removed from class .columns for testing mx-5 mt-5 -->

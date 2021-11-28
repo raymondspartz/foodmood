@@ -1,0 +1,324 @@
+:root {
+    --darker-red: #540804;
+    --red: #81171B;
+    --dark-orange: #AD2E24;
+    --orange: #C77146;
+    --lightest-orange: #EA8C55;
+    --main-bg-color: #fde0cf;
+    --info-blue: hsl(204, 86%, 53%);
+}
+
+/* APPLY FONT FAMILY TO PAGE */
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(250, 246, 240);
+}
+
+.main-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Navbar Styling Start */
+.navbar {
+    background-color: var(--orange);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a, .navbar span {
+    transition: .5s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    color: var(--orange);
+    background-color: var(--main-bg-color);
+}
+/* Navbar Styling End */
+
+/*options-container Styling Start */
+#top-column {
+    background-color: rgb(252, 239, 215);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#bottom-column {
+    background-color: rgb(252, 239, 215);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+/* options-container Styling End */
+
+/* Cuisine Container Stlying Start */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding: 5%;
+}
+
+.cuisine-box {
+    height: 300px;
+    width: 300px;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.ingredient-box {
+    width: 300px;
+    border-radius: 0.5rem;
+    padding: 0 15px 15px 15px;
+    background-color: var(--orange);
+}
+
+.cocktail-box {
+    background-color: var(--red);
+}
+
+.title {
+    text-align: center;
+}
+
+.meal-name {
+    background-color: var(--orange);
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*If time provides, will find a better way for this effect with less code */
+.american {
+    background-color: #b1e8ff;
+    transition: 0.25s;
+}
+.american:hover {
+    background-color: #b1e8ffa1;
+}
+.french {
+    background-color: #ffb1b1;
+    transition: 0.25s;
+}
+.french:hover {
+    background-color: #ffb1b1b9;
+}
+.italian {
+    background-color: #fdffb1;
+    transition: 0.25s;
+}
+.italian:hover {
+    background-color: #fcffb18f;
+}
+.indian {
+    background-color: #b1b9ff;
+    transition: 0.25s;
+}
+.indian:hover {
+    background-color: #b1b9ffb2;
+}
+.mexican {
+    background-color: #b1ffb9;
+    transition: 0.25s;
+}
+.mexican:hover {
+    background-color: #b1ffb97c;
+}
+.japanese {
+    background-color: #ffd7b1;
+    transition: 0.25s;
+}
+.japanese:hover {
+    background-color: #ffd7b175;
+}
+
+
+#cuisines {
+    border-radius: 0.5rem;
+    /* background-color: #fffefa; */
+}
+
+ul {
+    list-style: circle;
+    padding-left: 2rem;
+}
+
+/* shadowing */
+.navbar, #top-column, #bottom-column, 
+.cuisine-box, .ingredient-box, .user-select {
+    box-shadow: 5px 10px 8px rgb(204, 204, 204);
+    transition: 0.25s;
+}
+
+.cuisine-box:hover, .ingredient-box:hover {
+    box-shadow: 5px 10px 8px rgb(143, 143, 143);
+}
+/* Cuisine Container Styling End */
+
+/* Cocktail Container Styling Start */
+.cocktail-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.cocktail-name {
+    width: 80%;
+    color: white;
+    background-color: var(--dark-orange);
+    border-radius: 10px;
+}
+
+/* User Save Section Styling Start */
+.userselect-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding: 5%;
+}
+
+.user-select {
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--info-blue);
+}
+
+.save-button {
+    color: var(--info-blue);
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 3px 20px;
+    transition: .3s ease;
+}
+
+.save-button:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.user-favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.pairing {
+    display: flex;
+}
+
+
+.hero-body {
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    align-items: flex-start;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero-foot {
+    background-color: rgb(204, 204, 204);
+}
+
+
+
+
+.favorite-meal {
+    height: 100px;
+    background-color: var(--orange);
+    transition: 0.25s;
+}
+
+.favorite-meal:hover {
+    background-color: var(--lightest-orange);
+}
+
+.favorite-drink {
+    height: 100px;
+    background-color: var(--dark-orange);
+    transition: 0.25s;
+}
+
+.favorite-drink:hover {
+    background-color: var(--lightest-orange);
+}
+
+.favorite-drink h3, .favorite-meal h3 {
+    font-weight: lighter;
+    font-style: italic;
+    color: white;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1023px) {
+    .navbar {
+        height: 12%;
+    }
+
+    .nav-saying {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 1;
+    }
+    
+    .cuisine-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .nav-saying {
+        font-size: 1.25rem;
+    }
+
+    .cuisine-box {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .cuisine-box h3 {
+        font-style: italic;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    .nav-saying {
+        display: none;
+    }
+
+    .options-container {
+        margin: 0 0.75rem 0.75rem 0.75rem;
+    }
+
+    
+    .cuisine-box {
+        height: 200px;
+        width: 200px;
+    }
+    
+}
